@@ -35,16 +35,17 @@
   list-style-type: circle;
 }
 
-.address-block{ /* общее свойство у address */ 
+.address-block {
+  /* общее свойство у address */
   display: flex;
   align-items: flex-start;
   font-size: 18px;
   flex-direction: column;
 }
-.header__contacts{
+.header__contacts {
   justify-self: end;
   max-width: 240px;
-} 
+}
 .header__contacts a,
 .header__contacts p {
   font-style: normal;
@@ -113,7 +114,6 @@
 }
 .aligned-text_center {
   text-align: center;
-  
 }
 .aligned-text_right {
   margin-right: -30px;
@@ -128,7 +128,7 @@
   color: #fff;
   font-family: inherit;
   font-size: 22px;
- 
+
   text-transform: uppercase;
   border: 1px solid #fff;
 }
@@ -153,25 +153,22 @@
   background-position: center;
 }
 
-.lot::before {  /* разобрался как использовать ::before  вместо прошлых способов*/
+.lot::before {
+  /* разобрался как использовать ::before  вместо прошлых способов*/
   content: "";
-  position: absolute; 
+  position: absolute;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.6);
-  z-index: 0; 
+  z-index: 0;
 }
 .lot--film {
-  background-image:
-    url("../images/card-lot-01.jpg");
-    
+  background-image: url("../images/card-lot-01.jpg");
 }
 .lot--book {
-  background-image:
-    url("../images/card-lot-02.jpg");
-  }
+  background-image: url("../images/card-lot-02.jpg");
+}
 .lot--picture {
-  background-image:
-    url("../images/card-lot-03.jpg");
+  background-image: url("../images/card-lot-03.jpg");
 }
 .lots__heading {
   font-weight: bold;
@@ -204,7 +201,7 @@
   text-underline-offset: 3px;
   font-weight: 700;
   text-transform: uppercase;
-   z-index: 1;
+  z-index: 1;
 }
 .lot__text {
   position: relative;
@@ -213,7 +210,7 @@
   text-decoration: none;
   text-align: start;
   font-size: 20px;
-   z-index: 1;
+  z-index: 1;
 }
 .lots__button {
   display: inline-block;
@@ -321,7 +318,7 @@ footer {
 .footer__menu-link {
   text-transform: lowercase;
 }
-.footer__contacts{
+.footer__contacts {
   justify-self: start;
   max-width: 270px;
   margin-top: 40px;
