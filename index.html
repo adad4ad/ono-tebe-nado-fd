@@ -33,18 +33,15 @@
         <img src="images/logo-black.svg" alt="Логотип Оно Тебе Надо" />
       </a>
       <address class="address-block header__contacts">
-        <!-- исправил -->
         <a class="address__link" href="tel:+99995555555">+9 999 555 5555</a> 
         <a class="address__link" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-        <p class="address__link">наб. Принсенграхт 263- 265, Амстердам</p>
+        <p class="address__text">наб. Принсенграхт 263- 265, Амстердам</p>         <!-- исправил -->
       </address>
     </header>
 
     <main>
-      <section class="cover">
-        <div class="overlay"></div>
-
-        <div class="cover__content">
+      <section class="cover overlay">  <!-- Только в cover получается закрыть весь overlay, но мне кажется тоже ошибка что название секции с overlay могут путать. -->
+        <div class="cover__content" >
           <h1 class="cover__title">
             <span class="aligned-text aligned-text_left">Оно</span>
             <span class="aligned-text aligned-text_center">Тебе</span>
@@ -63,7 +60,9 @@
       <section class="lots">
         <h2 class="lots__heading">Лоты</h2>
         <ul class="lots__card-list">
-          <li class="lots__card-list-item">
+          <li class="lots__card-list-item overlay"> <!--  Здесь и в остальных добавил overlay, т.к если в lots то весь блок будет темный, 
+            а если  lots__card-list то пробел у карточек темный! Я пытался сделать по другому, никак не получается приходится использовать 3 overlay, 
+            хотя это может быть и ошибка из-за дублирования-->
             <a class="lots__card-link" href="#">
               <article class="lot lot--film">
                 <h3 class="lot__title">
@@ -77,7 +76,7 @@
               </article>
             </a>
           </li>
-          <li class="lots__card-list-item">
+          <li class="lots__card-list-item overlay"> 
             <a class="lots__card-link" href="#">
               <article class="lot lot--book">
                 <h3 class="lot__title">
@@ -94,7 +93,7 @@
               </article>
             </a>
           </li>
-          <li class="lots__card-list-item">
+          <li class="lots__card-list-item overlay">
             <a class="lots__card-link" href="#">
               <article class="lot lot--picture">
                 <h3 class="lot__title">
@@ -146,7 +145,7 @@
       <address class="address-block footer__contacts">
         <a class="address__link" href="tel:+99995555555">+9 999 555 5555</a>
         <a class="address__link" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-        <p class="address__link">наб. Принсенграхт 263- 265, Амстердам</p>
+        <p class="address__text">наб. Принсенграхт 263- 265, Амстердам</p> <!-- исправил -->
       </address>
 
       <nav class="footer__menu">

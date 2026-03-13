@@ -49,8 +49,23 @@
   font-style: normal;
   line-height: 1.35;
 }
+.address__text {
+  font-style: normal;
+}
+
+.overlay {
+  position: relative;
+}
+.overlay::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
 /* ------------------------------------------------------------------------------- */
 /* cover */
+
 .cover {
   position: relative;
   min-height: 757px;
@@ -60,12 +75,7 @@
   background-position: center;
   margin: 0 auto;
 }
-.overlay {
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: 0;
-}
+
 .cover__content {
   position: relative;
   z-index: 1;
@@ -142,14 +152,6 @@
   padding: 48px 40px;
   background-size: cover;
   background-position: center;
-}
-
-.lot::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: 0;
 }
 .lot--film {
   background-image: url("../images/card-lot-01.jpg");
